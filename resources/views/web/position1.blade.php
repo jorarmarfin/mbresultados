@@ -12,15 +12,15 @@
 				<a class="text-decoration-none" href="tel:+00112304567" target="_blank" title="Call Us Now">
 					<span class="custom-call-to-action">
 						<span class="action-title text-color-primary">Llámanos ahora</span>
-						<span class="action-info text-color-light">+001 1230 4567</span>
+						<h6><span class="action-info text-color-light">+51-1- 7245312</span></h6>
 					</span>
 				</a>
 			</div>
 			<div class="col-md-3 col-lg-2">
-				<a class="text-decoration-none" href="mail:mail@example.com" target="_blank" title="Envienos un Email">
+				<a class="text-decoration-none" href="comercial@mbresultados.com" target="_blank" title="Envienos un Email">
 					<span class="custom-call-to-action">
 						<span class="action-title text-color-primary">Envienos un Email</span>
-						<span class="action-info text-color-light">mail@example.com</span>
+						<h6><span class="action-info text-color-light">comercial@mbresultados.com</span></h6>
 					</span>
 				</a>
 			</div>

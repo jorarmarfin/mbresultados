@@ -6,7 +6,5 @@
 	@include('web.position1')
 	@include('web.about')
 	@include('web.expertises')
-	@include('web.strategy')
-	@include('web.cases')
 
 @endsection

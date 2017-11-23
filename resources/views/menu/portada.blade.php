@@ -5,74 +5,27 @@
 				<nav class="collapse">
 					<ul class="nav nav-pills" id="mainNav">
 						<li>
-							<a class="nav-link active" href="demo-business-consulting.html">
+							<a class="nav-link active" href="#">
 								Inicio
 							</a>
 						</li>
 						<li>
-							<a class="nav-link" href="demo-business-consulting-about-us.html">
+							<a class="nav-link" href="#">
 								Nosotros
 							</a>
 						</li>
-						<li class="dropdown dropdown-primary">
-							<a class="dropdown-toggle nav-link" href="demo-business-consulting-expertise.html">
-								Experiencia
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Corporate Finance
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Corporate Restructuring
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Economic Consulting
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Litigation Consulting
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Strategic Consulting
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-										Tech Consulting
-									</a>
-								</li>
-							</ul>
-						</li>
 						<li>
-							<a class="nav-link" href="demo-business-consulting-cases.html">
-								Casos
+							<a class="nav-link" href="#">
+								Servicios
 							</a>
 						</li>
 						<li>
-							<a class="nav-link" href="demo-business-consulting-tertimonials.html">
-								Testimonios
+							<a class="nav-link" href="#">
+								Novedades
 							</a>
 						</li>
 						<li>
-							<a class="nav-link" href="demo-business-consulting-team.html">
-								Equipo
-							</a>
-						</li>
-						<li>
-							<a class="nav-link" href="demo-business-consulting-blog.html">
-								Noticias
-							</a>
-						</li>
-						<li>
-							<a class="nav-link" href="demo-business-consulting-contact-us.html">
+							<a class="nav-link" href="#">
 								Contactanos
 							</a>
 						</li>

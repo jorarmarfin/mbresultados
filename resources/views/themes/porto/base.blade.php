@@ -84,7 +84,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 text-center">
-							<p>2017 © Porto <span class="text-color-light">Business Consulting</span> - Copyright All Rights Reserved</p>
+							<p>2017 © luis.mayta@gmail.com <span class="text-color-light">Empresa Consultora MB Resultados</span> - Todos los derechos reservados</p>
 						</div>
 					</div>
 				</div>
