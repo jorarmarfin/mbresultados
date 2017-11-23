@@ -8,9 +8,5 @@
 	@include('web.expertises')
 	@include('web.strategy')
 	@include('web.cases')
-	@include('web.testimonials')
-	@include('web.team')
-	@include('web.question')
-	@include('web.blog')
 
 @endsection
