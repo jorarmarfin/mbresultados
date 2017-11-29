@@ -1,4 +1,4 @@
-<section class="section section-text-light section-background m-0" style="background: url('img/demos/business-consulting/contact/contact-background.jpg'); background-size: cover;">
+<section class="section section-text-light section-background m-0" style="background: url({{ asset('img/demos/business-consulting/contact/contact-background.jpg') }}); background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">

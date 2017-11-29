@@ -14,7 +14,7 @@
 						</div>
 						<div class="feature-box-info ml-3">
 							<h4 class="font-weight-normal text-5">Consultorias</h4>
-							<p class="text-2">Implementación de Normas como ISO 9001, 14001, 27001, 2600, 31000, OHSAS, la Ley de Seguridad y Salud en el Trabajo, entre otras.</p>
+							<p class="text-2">Implementación de Normas como ISO 9001, 14001, 27001, 26000, 31000, OHSAS, la Ley de Seguridad y Salud en el Trabajo, entre otras.</p>
 						</div>
 					</div>
 				</a>
