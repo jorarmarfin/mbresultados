@@ -2,9 +2,9 @@
 
 
 @section('main')
-	@include('web.slider')
-	@include('web.position1')
-	@include('web.about')
-	@include('web.expertises')
+	@include('web.portada.slider')
+	@include('web.portada.position1')
+	@include('web.portada.about')
+	@include('web.portada.expertises')
 
 @endsection

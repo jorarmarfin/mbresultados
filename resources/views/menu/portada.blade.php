@@ -5,27 +5,44 @@
 				<nav class="collapse">
 					<ul class="nav nav-pills" id="mainNav">
 						<li>
-							<a class="nav-link active" href="#">
+							<a class="nav-link active" href="{{ route('home.index') }}">
 								Inicio
 							</a>
 						</li>
 						<li>
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="{{ route('nosotros') }}">
 								Nosotros
 							</a>
 						</li>
-						<li>
-							<a class="nav-link" href="#">
+						<li class="dropdown dropdown-primary">
+							<a class="dropdown-toggle nav-link" href="{{ route('servicios') }}">
 								Servicios
 							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="{{ route('servicios.consultorias') }}">
+										Consultorias
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="{{ route('servicios.capacitaciones') }}">
+										Capacitaciones
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="{{ route('servicios.asesorias') }}">
+										Asesorias
+									</a>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="{{ route('novedades') }}">
 								Novedades
 							</a>
 						</li>
 						<li>
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="{{ route('contactanos') }}">
 								Contactanos
 							</a>
 						</li>

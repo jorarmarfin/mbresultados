@@ -56,7 +56,6 @@
 
 	</head>
 	<body>
-
 		<div class="body">
 			<header id="header" class="header-narrow header-semi-transparent header-transparent-sticky-deactive custom-header-transparent-bottom-border" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
 				<div class="header-body">
@@ -65,8 +64,8 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-business-consulting.html">
-											<img alt="Porto" width="120" src="img/logo-blanco.png">
+										<a href="{{ route('home.index') }}">
+											<img alt="Porto" width="120" src="{{ asset('img/logo-blanco.png') }}">
 										</a>
 									</div>
 								</div>
@@ -79,7 +78,9 @@
 			<div role="main" class="main">
 				@yield('main')
 			</div>
-			@include('web.contact')
+			@if ($seccion!='contactanos')
+				@include('web.portada.contact')
+			@endif
 			<footer id="footer">
 				<div class="container">
 					<div class="row">
