@@ -71,7 +71,8 @@
 					<strong>Error!</strong> Hubo un error al enviar su mensaje.
 					<span class="text-1 mt-2 d-block" id="mailErrorMessage"></span>
 				</div>
-				<form id="contactForm" class="custom-contact-form-style-1" action="php/contact-form.php" method="POST">
+
+				{!! Form::open(['route'=>'envio.email.contactanos','method'=>'POST','class'=>'custom-contact-form-style-1']) !!}
 					<div class="form-row">
 						<div class="form-group col">
 							<div class="custom-input-box">
@@ -101,7 +102,7 @@
 							<input type="submit" value="Enviar ahora" class="btn btn-outline custom-border-width btn-primary custom-border-radius font-weight-semibold text-uppercase" data-loading-text="Loading...">
 						</div>
 					</div>
-				</form>
+				{!! Form::close() !!}
 			</div>
 		</div>
 	</div>

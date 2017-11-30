@@ -44,7 +44,7 @@
 					data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']"
 					data-y="center" data-voffset="['-80','-80','-80','-40']"
 					data-start="800"
-					data-transform_in="y:[-300%];opacity:0;s:500;" style="font-size: 32px;">Acompañmiento en</h1>
+					data-transform_in="y:[-300%];opacity:0;s:500;" style="font-size: 32px;">Acompañamiento en</h1>
 
 				<div class="tp-caption custom-secondary-font font-weight-bold text-color-light"
 					data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']"
