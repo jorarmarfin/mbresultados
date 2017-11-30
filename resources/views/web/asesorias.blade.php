@@ -43,7 +43,7 @@
 			<p>En las capacitaciones encontraras respuestas a tus necesidades.</p>
 			<p>Aplicamos una metodología personalizada</p>
 
-			<img src="{{ asset('img/demos/business-consulting/cases/case-5.jpg') }}" class="img-fluid mb-4 img-thumbnail" alt="" align="right" style="margin: 5;">
+			<img src="{{ asset('img/demos/business-consulting/cases/case-1.jpg') }}" class="img-fluid mb-4 img-thumbnail" alt="" align="right" style="margin: 5;">
 			<p class="lead mb-4">Asesoría Legal</p>
 			<p>Nuestros capacitadores  especialista desarrollan cursos de mayor demanda en Calidad, Seguridad, Ambiente, Contabilidad, Turismo, Derecho, Administración, Educación, entre otros.
 			<p>En las capacitaciones encontraras respuestas a tus necesidades.</p>

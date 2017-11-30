@@ -22,7 +22,7 @@
 	<div class="row pt-1 pb-4 mb-3">
 		<div class="col">
 			<p class="lead mb-4">IN HOUSE</p>
-			<img src="{{ asset('img/demos/business-consulting/cases/case-5.jpg') }}" class="img-fluid mb-4" alt="" align="right">
+			<img src="{{ asset('img/demos/business-consulting/cases/case-2.jpg') }}" class="img-fluid mb-4 img-thumbnail" alt="" align="right" style="margin-left: 15px;">
 			<p>Previo diagnóstico preparamos la capacitación de acuerdo a tus necesidades.
 			Lograremos la competencia de tu personal.</p>
 			<p class="lead mb-4">DISPONIBLE A PÚBLICO EN GENERAL</p>
