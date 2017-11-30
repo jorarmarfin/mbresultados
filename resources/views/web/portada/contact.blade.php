@@ -48,7 +48,7 @@
 						<h4 class="mb-1">Nuestras Redes sociales</h4>
 						<ul class="social-icons custom-social-icons-style-1 mt-2 custom-opacity-font">
 							<li class="social-icons-facebook">
-								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<a href="https://www.facebook.com/mb.resultados.1" target="_blank" title="Facebook">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
