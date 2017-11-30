@@ -7,7 +7,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
-				<a href="demo-business-consulting-expertise-detail.html" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
+				<a href="{{ route('servicios.consultorias') }}" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
 					<div class="feature-box custom-feature-box feature-box-style-2">
 						<div class="feature-box-icon">
 							<img src="{{ asset('img/demos/business-consulting/expertise/expertise-1.jpg') }}" alt="">
@@ -20,7 +20,7 @@
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a href="demo-business-consulting-expertise-detail.html" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
+				<a href="{{ route('servicios.capacitaciones') }}" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
 					<div class="feature-box custom-feature-box feature-box-style-2">
 						<div class="feature-box-icon">
 							<img src="{{ asset('img/demos/business-consulting/expertise/expertise-2.jpg') }}" alt="">
@@ -33,7 +33,7 @@
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a href="demo-business-consulting-expertise-detail.html" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200">
+				<a href="{{ route('servicios.asesorias') }}" class="text-decoration-none appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200">
 					<div class="feature-box custom-feature-box feature-box-style-2">
 						<div class="feature-box-icon">
 							<img src="{{ asset('img/demos/business-consulting/expertise/expertise-3.jpg') }}" alt="">
@@ -48,7 +48,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<a class="btn btn-outline custom-border-width btn-primary custom-border-radius font-weight-semibold text-uppercase mb-3" href="demo-business-consulting-expertise.html" title="View All">Leer Más</a>
+				<a class="btn btn-outline custom-border-width btn-primary custom-border-radius font-weight-semibold text-uppercase mb-3" href="{{ route('servicios') }}" title="Leer mas">Leer Más</a>
 			</div>
 		</div>
 	</div>
