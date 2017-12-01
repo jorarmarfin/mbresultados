@@ -107,8 +107,7 @@
 						<div class="feature-box-info">
 							<h2 class="font-weight-bold text-color-dark">- Email</h2>
 							<p class="text-4">
-								<a href="mailto:mail@example.com" class="text-decoration-none">mail@example.com</a><br>
-								<a href="mailto:mail2@example.com" class="text-decoration-none">mail2@example.com</a>
+								<a href="mbresultados@gmail.com" class="text-decoration-none">mbresultados@gmail.com</a><br>
 							</p>
 						</div>
 					</div>
