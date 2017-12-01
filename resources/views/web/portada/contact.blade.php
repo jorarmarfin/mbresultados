@@ -39,7 +39,7 @@
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
 								Email
 								<span class="info text-4">
-									comercial@mbresultados.com
+									comercial@mbresultados.com  mbresultados@gmail.com
 								</span>
 							</span>
 						</a>
