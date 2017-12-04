@@ -29,7 +29,8 @@
 					</div>
 					<div class="col-lg-6 custom-sm-margin-top">
 						<h4 class="mb-1">Nuestra Ubicación</h4>
-						<p class="custom-opacity-font">Dirección </p>
+						<p class="custom-opacity-font">Jiron Teodoro Cardenas N° 475 Int. 202
+Santa Beatriz Lima</p>
 					</div>
 				</div>
 				<div class="row">
