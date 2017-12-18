@@ -3,16 +3,16 @@
 		<div class="row align-items-center">
 			<div class="col-md-6 col-lg-7">
 				<div class="looking-for-box">
-					<h2>- <span class="text-1 custom-secondary-font">¿Esta buscando una</span><br>
-					Capacitación, consultoria o asesoria?</h2>
-					<p>Iniciemos el reto y juntos lograremos el resultado</p>
+					<h2>- <span class="text-1 custom-secondary-font">Iniciemos el reto y juntos lograremos el resultado</h2>
+					<p>¿Esta buscando una</span><br>
+					Capacitación, consultoria o asesoria?</p>
 				</div>
 			</div>
 			<div class="col-md-3 d-flex justify-content-md-end mb-4 mb-md-0">
 				<a class="text-decoration-none" href="tel:+00112304567" target="_blank" title="Call Us Now">
 					<span class="custom-call-to-action">
 						<span class="action-title text-color-primary">Llámanos ahora</span>
-						<h6><span class="action-info text-color-light">+51-1- 7245312</span></h6>
+						<h6><span class="action-info text-color-light">+51-1- 941568766</span></h6>
 					</span>
 				</a>
 			</div>

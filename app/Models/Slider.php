@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Slider extends Model
+{
+    protected $table = 'slider';
+    protected $guarded = [''];
+
+    public $timestamps = false;
+
+    /**
+    * Atributos Imagen
+    */
+    public function getVerImagenAttribute()
+    {
+    	return asset('storage/'.$this->imagen);
+    }
+}

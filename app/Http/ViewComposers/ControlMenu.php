@@ -23,7 +23,10 @@ class ControlMenu
 							'Usuarios'=>['route'=>'admin.usuarios.index','roles'=>['root']]
 						]
 			],
-			'contact-us' => ['full_url' => 'http://contact.us','roles'=>['admin','root']]
+			'Slider' => ['route' => 'admin.slider.index','icon'=>'fa fa-bars','roles'=>['admin','root']],
+			'Cursos' => ['full_url' => 'http://contact.us','icon'=>'fa fa-book','roles'=>['admin','root']],
+			'Blog' => ['full_url' => 'http://contact.us','icon'=>'fa fa-wordpress','roles'=>['admin','root']],
+			'Logos' => ['full_url' => 'http://contact.us','icon'=>'fa fa-get-pocket','roles'=>['admin','root']]
 		];
 		$view->with(compact('items'));
 	}

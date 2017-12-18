@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Slider;
 use Auth;
+use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     /**
@@ -14,7 +15,8 @@ class HomeController extends Controller
     public function index()
     {
     	$seccion = 'home';
-        return view('web.index',compact('seccion'));
+        $Slider = Slider::orderBy('orden')->get();
+        return view('web.index',compact('seccion','Slider'));
     }
 
 }
