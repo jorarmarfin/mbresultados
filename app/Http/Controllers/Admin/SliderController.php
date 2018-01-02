@@ -41,7 +41,6 @@ class SliderController extends Controller
     public function store(SliderCreateRequest $request)
     {
         $data = $request->all();
-        //dd($request->file('imagen')->store('public'));
         if ($request->hasFile('imagen')) {
             $data['imagen'] = $request->file('imagen')->store('slides','public');
         }
@@ -68,7 +67,8 @@ class SliderController extends Controller
      */
     public function edit($id)
     {
-        //
+        $slider = Slider::find($id);
+        return view('admin.slider.edit',compact('slider'));
     }
 
     /**
