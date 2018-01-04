@@ -34,9 +34,9 @@
                         <td> {{ $item->orden }} </td>
                         <td>
                         @if ($item->activo)
-                            <a href="{{ route('admin.usuarios.activar',['users',$item->id,0]) }}" class="label label-sm label-info"> SI </a>
+                            <a href="{{ route('admin.slider.activar',['slider',$item->id,0]) }}" class="label label-sm label-info"> SI </a>
                         @else
-                            <a href="{{ route('admin.usuarios.activar',['users',$item->id,1]) }}" class="label label-sm label-danger"> NO </a>
+                            <a href="{{ route('admin.slider.activar',['slider',$item->id,1]) }}" class="label label-sm label-danger"> NO </a>
                         @endif
                         </td>
                         <td>

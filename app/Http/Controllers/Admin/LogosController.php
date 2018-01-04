@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LogoCreateRequest;
+use App\Models\Logo;
+use App\Traits\RecordActivate;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class LogosController extends Controller
 {
+    use RecordActivate;
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +19,8 @@ class LogosController extends Controller
      */
     public function index()
     {
-        //
+        $Lista = Logo::all();
+        return view('admin.logo.index',compact('Lista'));
     }
 
     /**
@@ -24,7 +30,7 @@ class LogosController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.logo.create');
     }
 
     /**
@@ -33,9 +39,14 @@ class LogosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LogoCreateRequest $request)
     {
-        //
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('logos','public');
+        }
+        Logo::create($data);
+        return redirect()->route('admin.logo.index');
     }
 
     /**
@@ -57,7 +68,8 @@ class LogosController extends Controller
      */
     public function edit($id)
     {
-        //
+        $logo = Logo::find($id);
+        return view('admin.logo.edit',compact('logo'));
     }
 
     /**
@@ -69,7 +81,20 @@ class LogosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $logo = Logo::find($id);
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('logos','public');
+
+            $exists = Storage::disk('logos')->exists($logo->solo_imagen);
+            if($exists)
+            Storage::delete("/public/$logo->imagen");
+
+        }
+        $logo->fill($data);
+        $logo->save();
+        return redirect()->route('admin.logo.index');
+
     }
 
     /**
@@ -81,5 +106,17 @@ class LogosController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function delete($id)
+    {
+        $logo = Logo::find($id);
+
+        $exists = Storage::disk('logos')->exists($logo->solo_imagen);
+        if($exists)
+        Storage::delete("/public/$logo->imagen");
+
+        $logo->delete($id);
+        return redirect()->route('admin.logo.index');
     }
 }

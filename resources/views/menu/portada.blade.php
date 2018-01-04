@@ -37,8 +37,13 @@
 							</ul>
 						</li>
 						<li>
-							<a class="nav-link" href="{{ route('novedades') }}">
-								Novedades
+							<a class="nav-link" href="{{ route('cursos') }}">
+								Cursos
+							</a>
+						</li>
+						<li>
+							<a class="nav-link" href="{{ route('blogs') }}">
+								blog
 							</a>
 						</li>
 						<li>

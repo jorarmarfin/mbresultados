@@ -12,10 +12,18 @@ class Slider extends Model
     public $timestamps = false;
 
     /**
-    * Atributos Imagen
+    * Atributos Imagen y sub ruta
     */
     public function getVerImagenAttribute()
     {
-    	return asset('storage/'.$this->imagen);
+        return asset('storage/'.$this->imagen);
+    }
+    /**
+    * Atributos Solo Imagen y extension
+    */
+    public function getSoloImagenAttribute()
+    {
+        $imagen  = explode('/',$this->imagen);
+    	return $imagen[1];
     }
 }

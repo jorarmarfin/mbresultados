@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers\Admin\Cursos;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Curso;
+use App\Traits\RecordActivate;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CursosController extends Controller
 {
+    use RecordActivate;
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,8 @@ class CursosController extends Controller
      */
     public function index()
     {
-        //
+        $Lista = Curso::all();
+        return view('admin.curso.index',compact('Lista'));
     }
 
     /**
@@ -24,7 +29,7 @@ class CursosController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.curso.create');
     }
 
     /**
@@ -35,7 +40,12 @@ class CursosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('cursos','public');
+        }
+        Curso::create($data);
+        return redirect()->route('admin.curso.index');
     }
 
     /**
@@ -46,7 +56,7 @@ class CursosController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -57,7 +67,8 @@ class CursosController extends Controller
      */
     public function edit($id)
     {
-        //
+        $curso = Curso::find($id);
+        return view('admin.curso.edit',compact('curso'));
     }
 
     /**
@@ -69,7 +80,20 @@ class CursosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $curso = Curso::find($id);
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('slides','public');
+
+            $exists = Storage::disk('cursos')->exists($curso->solo_imagen);
+            if($exists)
+            Storage::delete("/public/$curso->imagen");
+
+        }
+        $curso->fill($data);
+        $curso->save();
+        return redirect()->route('admin.curso.index');
+
     }
 
     /**
@@ -81,5 +105,17 @@ class CursosController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function delete($id)
+    {
+        $curso = Curso::find($id);
+
+        $exists = Storage::disk('cursos')->exists($curso->solo_imagen);
+        if($exists)
+        Storage::delete("/public/$curso->imagen");
+
+        $curso->delete($id);
+        return redirect()->route('admin.curso.index');
     }
 }

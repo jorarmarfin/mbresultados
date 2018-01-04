@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers\Admin\Blog;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BlogCreateRequest;
+use App\Models\Blog;
+use App\Traits\RecordActivate;
+use Auth;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
+    use RecordActivate;
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $Lista = Blog::all();
+        return view('admin.blog.index',compact('Lista'));
     }
 
     /**
@@ -24,7 +31,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.blog.create');
     }
 
     /**
@@ -33,9 +40,15 @@ class BlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BlogCreateRequest $request)
     {
-        //
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('blog','public');
+        }
+        $data['idusuario'] = Auth::user()->id;
+        Blog::create($data);
+        return redirect()->route('admin.blog.index');
     }
 
     /**
@@ -46,7 +59,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -57,7 +70,8 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        $blog = Blog::find($id);
+        return view('admin.blog.edit',compact('blog'));
     }
 
     /**
@@ -69,7 +83,20 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $blog = Blog::find($id);
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('blog','public');
+
+            $exists = Storage::disk('blog')->exists($blog->solo_imagen);
+            if($exists)
+            Storage::delete("/public/$blog->imagen");
+
+        }
+        $blog->fill($data);
+        $blog->save();
+        return redirect()->route('admin.blog.index');
+
     }
 
     /**
@@ -81,5 +108,17 @@ class BlogController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function delete($id)
+    {
+        $blog = Blog::find($id);
+
+        $exists = Storage::disk('blog')->exists($blog->solo_imagen);
+        if($exists)
+        Storage::delete("/public/$blog->imagen");
+
+        $blog->delete($id);
+        return redirect()->route('admin.blog.index');
     }
 }

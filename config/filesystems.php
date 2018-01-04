@@ -54,6 +54,26 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'sliders' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/slides'),
+            'visibility' => 'public',
+        ],
+        'logos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/logos'),
+            'visibility' => 'public',
+        ],
+        'cursos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/cursos'),
+            'visibility' => 'public',
+        ],
+        'blog' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/blog'),
+            'visibility' => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',

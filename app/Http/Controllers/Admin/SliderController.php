@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SliderCreateRequest;
 use App\Models\Slider;
+use App\Traits\RecordActivate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 
 class SliderController extends Controller
 {
+    use RecordActivate;
     /**
      * Display a listing of the resource.
      *
@@ -80,7 +82,20 @@ class SliderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $slider = Slider::find($id);
+        $data = $request->all();
+        if ($request->hasFile('imagen')) {
+            $data['imagen'] = $request->file('imagen')->store('slides','public');
+
+            $exists = Storage::disk('sliders')->exists($slider->solo_imagen);
+            if($exists)
+            Storage::delete("/public/$slider->imagen");
+
+        }
+        $slider->fill($data);
+        $slider->save();
+        return redirect()->route('admin.slider.index');
+
     }
 
     /**
@@ -96,7 +111,13 @@ class SliderController extends Controller
 
     public function delete($id)
     {
-        Slider::destroy($id);
+        $slide = Slide::find($id);
+
+        $exists = Storage::disk('sliders')->exists($slide->solo_imagen);
+        if($exists)
+        Storage::delete("/public/$slide->imagen");
+
+        $slide->delete($id);
         return redirect()->route('admin.slider.index');
     }
 }
