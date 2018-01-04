@@ -8,6 +8,8 @@
 	@include('web.portada.cases')
 	@include('web.portada.expertises')
 	@include('web.portada.logos')
+@if (isset($Blog))
 	@include('web.portada.blog')
+@endif
 
 @endsection
