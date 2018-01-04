@@ -15,7 +15,10 @@ class CreateLogosTable extends Migration
     {
         Schema::create('logo', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('nombre',255)->nullable();
+            $table->string('imagen',255)->nullable();
+            $table->integer('orden')->nullable();
+            $table->boolean('activo')->default(true);
         });
     }
 

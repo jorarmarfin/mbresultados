@@ -14,7 +14,7 @@ class ControlMenu
 	public function compose(View $view)
 	{
 		$items = [
-			'Inicio' => ['route' => 'home.index', 'icon' => 'icon-home'],
+			'Inicio' => ['route' => 'admin.index', 'icon' => 'icon-home'],
 			'Configuracion' => ['icon'=>'icon-settings',
 						'submenu'=>[
 							'Catalogo'=>['route'=>'catalogo.index','roles'=>['root']],
@@ -24,9 +24,10 @@ class ControlMenu
 						]
 			],
 			'Slider' => ['route' => 'admin.slider.index','icon'=>'fa fa-bars','roles'=>['admin','root']],
-			'Cursos' => ['full_url' => 'http://contact.us','icon'=>'fa fa-book','roles'=>['admin','root']],
-			'Blog' => ['full_url' => 'http://contact.us','icon'=>'fa fa-wordpress','roles'=>['admin','root']],
-			'Logos' => ['full_url' => 'http://contact.us','icon'=>'fa fa-get-pocket','roles'=>['admin','root']]
+			'Cursos' => ['route' => 'admin.curso.index','icon'=>'fa fa-book','roles'=>['admin','root']],
+			'Blog' => ['route' => 'admin.blog.index','icon'=>'fa fa-wordpress','roles'=>['admin','root']],
+			'Logos' => ['route' => 'admin.logo.index','icon'=>'fa fa-get-pocket','roles'=>['admin','root']],
+			'Pagina web' => ['route' => 'home.index','icon'=>'fa fa-internet-explorer','roles'=>['admin','root'],'target'=>'blank']
 		];
 		$view->with(compact('items'));
 	}

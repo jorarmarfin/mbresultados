@@ -10,8 +10,13 @@ Route::view('servicios/consultorias','web.consultorias',['seccion'=>'consultoria
 Route::view('servicios/capacitaciones','web.capacitaciones',['seccion'=>'capacitaciones'])->name('servicios.capacitaciones');
 Route::view('servicios/asesorias','web.asesorias',['seccion'=>'asesorias'])->name('servicios.asesorias');
 
-Route::view('novedades','web.novedades',['seccion'=>'novedades'])->name('novedades');
 Route::view('contactanos','web.contactanos',['seccion'=>'contactanos'])->name('contactanos');
+
+Route::get('curso/{id}','HomeController@show')->name('ver.curso');
+Route::get('cursos','HomeController@cursos')->name('cursos');
+
+Route::get('blog/{id}','HomeController@showBlog')->name('ver.blog');
+Route::get('blogs','HomeController@blogs')->name('blogs');
 
 /*Envio de Email*/
 Route::post('envio-email',function(){
