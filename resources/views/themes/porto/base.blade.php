@@ -65,7 +65,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="{{ route('home.index') }}">
-											<img alt="Porto" width="120" src="{{ asset('img/logo-blanco.png') }}">
+											<img alt="Porto" width="120" src="{{ asset('img/logo-color.jpg') }}">
 										</a>
 									</div>
 								</div>
