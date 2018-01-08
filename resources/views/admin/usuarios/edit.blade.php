@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-md-12">
         @component('components.portlet-light')
-		{!! Form::open(['route'=>'admin.usuarios.store','method'=>'POST','files'=>'true']) !!}
+		{!! Form::model($usuario,['route'=>['admin.usuarios.update',$usuario],'method'=>'PUT','files'=>'true']) !!}
 			{!! Field::text('name',['label'=>'Nombre de Usuario','class'=>'bg-grey-steel margin-bottom-10','template'=>'themes.metronic.fields.texth3']) !!}
 			{!! Field::text('username',['label'=>'Username','class'=>'bg-grey-steel margin-bottom-10','template'=>'themes.metronic.fields.texth3']) !!}
 			{!! Field::text('email',['label'=>'Email','class'=>'bg-grey-steel margin-bottom-10','template'=>'themes.metronic.fields.texth3']) !!}

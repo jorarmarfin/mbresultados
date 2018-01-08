@@ -32,7 +32,20 @@ class UsuariosController extends Controller
     }
     public function edit($id)
     {
-    	dd($id);
+        $usuario = User::find($id);
+        return view('admin.usuarios.edit',compact('usuario'));
+    }
+    public function update(Request $request,$id)
+    {
+    	$usuario = User::find($id);
+        $data = $request->all();
+         if ($request->has('password')) {
+            $data['password'] = $request->input('password');
+        }
+        $usuario->fill($data);
+        $usuario->save();
+        Alert::success('Usuario actualizado con exito');
+        return redirect()->route('admin.usuarios.index');
     }
     public function delete($id)
     {
