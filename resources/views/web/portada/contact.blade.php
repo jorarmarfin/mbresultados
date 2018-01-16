@@ -17,14 +17,6 @@
 								<span class="info text-4">941 568 766</span>
 								<span class="info text-4">941 568 764</span>
 							</span>
-							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-								RPM
-								<span class="info text-4">996 021 784</span>
-							</span>
-							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-								ENTEL
-								<span class="info text-4">977 400 092</span>
-							</span>
 						</a>
 					</div>
 					<div class="col-lg-6 custom-sm-margin-top">

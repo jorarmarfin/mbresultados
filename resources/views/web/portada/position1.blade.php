@@ -20,7 +20,7 @@
 				<a class="text-decoration-none" href="mbresultados@gmail.com" target="_blank" title="Envienos un Email">
 					<span class="custom-call-to-action">
 						<span class="action-title text-color-primary">Envienos un Email</span>
-						<h6><span class="action-info text-color-light">comercial@mbresultados.com</span></h6>
+						<h6><span class="action-info text-color-light">comercial@mbresultados.pe</span></h6>
 						<h6><span class="action-info text-color-light">mbresultados@gmail.com</span></h6>
 					</span>
 				</a>
