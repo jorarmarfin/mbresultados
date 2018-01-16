@@ -34,7 +34,7 @@
 							<li><i class="fa fa-chevron-right"></i><p>IISO 9001 &ndash; Sistema de Gesti&oacute;n de la Calidad.</p></li>
 							<li><i class="fa fa-chevron-right"></i><p>ISO 14001 &ndash; Sistema de Gesti&oacute;n Ambiental.</p></li>
 							<li><i class="fa fa-chevron-right"></i><p>ISO 27001 &ndash; Sistema de Gesti&oacute;n de Seguridad de la Informaci&oacute;n.</p></li>
-							<li><i class="fa fa-chevron-right"></i><p>ISO 2600 &ndash; Sistema de Gesti&oacute;n de Responsabilidad Social.</p></li>
+							<li><i class="fa fa-chevron-right"></i><p>ISO 26000 &ndash; Sistema de Gesti&oacute;n de Responsabilidad Social.</p></li>
 						</ul>
                 	</div><!--span-->
                 	<div class="col-lg-6">

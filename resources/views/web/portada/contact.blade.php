@@ -7,10 +7,10 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<h4 class="mb-1">Lamanos</h4>
-						<a href="tel:+1234567890" class="text-decoration-none" target="_blank" title="Call Us">
+						<a href="tel:+2313152" class="text-decoration-none" target="_blank" title="Call Us">
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
 								Telefonos
-								<span class="info text-4">51-1- 7245312</span>
+								<span class="info text-4">51-1- 2313152</span>
 							</span>
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
 								RPC
