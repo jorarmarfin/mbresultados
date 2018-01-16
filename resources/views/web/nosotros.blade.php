@@ -25,7 +25,7 @@
 			<p>Estamos convencidos que la implementaci&oacute;n de Normas como ISO 9001, 14001, 27001, 26000, 31000, OHSAS, Ley de Seguridad y Salud en el Trabajo, entre otras ayudan a mejorar tu gesti&oacute;n y con nosotros lograr&aacute;s el resultado esperado.</p>
 			<p>Podr&aacute;s contar con nosotros en todo el Per&uacute;.</p>
 
-			<p>Si deseas formar parte de este gran equipo enviamos tu CV a rrhh@mbresultados.com gana experiencia con los mejores.</p>
+			<p>Si deseas formar parte de este gran equipo enviamos tu CV a rrhh@mbresultados.pe gana experiencia con los mejores.</p>
 			<p>Indicar el c&oacute;digo del puesto de postulaci&oacute;n:</p>
 			<div class="row pb-4">
 				<div class="col-lg-4">
