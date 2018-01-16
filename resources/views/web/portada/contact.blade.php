@@ -28,11 +28,11 @@ Santa Beatriz Lima</p>
 				<div class="row">
 					<div class="col-lg-6">
 						<h4 class="mb-1">Envianos un Email</h4>
-						<a href="mail:comercial@mbresultados.com" class="text-decoration-none" target="_blank" title="Mail Us">
+						<a href="mail:comercial@mbresultados.pe" class="text-decoration-none" target="_blank" title="Mail Us">
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
 								Email
 								<span class="info text-4">
-									comercial@mbresultados.com  mbresultados@gmail.com
+									comercial@mbresultados.pe  mbresultados@gmail.com
 								</span>
 							</span>
 						</a>
