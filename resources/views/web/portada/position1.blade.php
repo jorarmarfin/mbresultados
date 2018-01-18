@@ -4,7 +4,7 @@
 			<div class="col-md-6 col-lg-7">
 				<div class="looking-for-box">
 					<h2>- <span class="text-1 custom-secondary-font">Iniciemos el reto y juntos lograremos el resultado</h2>
-					<p>¿Esta buscando una</span><br>
+					<p style="color: #fff;">¿Esta buscando una</span><br>
 					Capacitación, consultoria o asesoria?</p>
 				</div>
 			</div>
