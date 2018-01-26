@@ -12,7 +12,7 @@
 			<a href="{{ route('ver.curso',$curso->slug) }}" target="blank" class="text-decoration-none">
 				<span class="thumb-info custom-thumb-info-style-1 thumb-info-hide-wrapper-bg">
 					<span class="thumb-info-wrapper m-0">
-						<img src="{{ $curso->ver_imagen }}" class="img-fluid" alt="">
+						<img src="{{ $curso->ver_imagen }}" style="height:97px;" class="img-fluid" alt="">
 					</span>
 					<span class="thumb-info-caption background-color-secondary p-4 pt-5 pb-5">
 						<span class="custom-thumb-info-title">
@@ -24,6 +24,6 @@
 				</span>
 			</a>
 		</div>
-	</div>
 @endforeach
+	</div>
 </section>
