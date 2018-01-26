@@ -24,7 +24,7 @@
 		<a href="{{ route('ver.curso',$curso->slug) }}" class="text-decoration-none">
 			<span class="thumb-info custom-thumb-info-style-1 mb-4 pb-1 thumb-info-hide-wrapper-bg">
 				<span class="thumb-info-wrapper m-0">
-					<img src="img/demos/business-consulting/cases/case-1.jpg" class="img-fluid" alt="">
+					<img src="{{ $curso->ver_imagen }}" class="img-fluid" alt="">
 				</span>
 				<span class="thumb-info-caption background-color-secondary p-3 pt-4 pb-4">
 					<span class="custom-thumb-info-title">
