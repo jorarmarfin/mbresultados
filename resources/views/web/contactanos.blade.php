@@ -91,7 +91,6 @@
 						<div class="feature-box-info">
 							<h2 class="font-weight-bold text-color-dark">- Teléfono</h2>
 							<p class="text-4">
-								01-2313152 <br>
 								94-1568766
 							</p>
 						</div>
