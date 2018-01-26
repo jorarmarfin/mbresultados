@@ -10,10 +10,9 @@
 						<a href="tel:+2313152" class="text-decoration-none" target="_blank" title="Call Us">
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
 								Telefonos
-								<span class="info text-4">51-1- 2313152</span>
 							</span>
 							<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-								RPC
+
 								<span class="info text-4">941 568 766</span>
 								<span class="info text-4">941 568 764</span>
 							</span>
