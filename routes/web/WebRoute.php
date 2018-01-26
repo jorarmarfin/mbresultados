@@ -22,7 +22,8 @@ Route::get('blogs','HomeController@blogs')->name('blogs');
 Route::post('envio-email',function(){
 	$datos = Request::all();
 
-	Mail::to('luis.mayta@gmail.com')
-		  ->send(new ContactEmail($datos));
+	Mail::to('caroll.bejarano@hotmail.com','Carol Bejarano')
+			->cc('mbresultados@gmail.com','Mb Resultados')
+		    ->send(new ContactEmail($datos));
 	return redirect()->route('home.index');
 })->name('envio.email.contactanos');
